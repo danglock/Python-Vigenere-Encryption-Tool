@@ -10,7 +10,7 @@ Un code Open Source permettant d'effectuer un chiffrement par substitution polya
 ### UNIX/Linux
 Télécharger le repository avec la commande suivante :
 ```bash
-git clone 
+git clone https://github.com/danglock/V.E.T-Vigenere-Encryption-Tool.git
 ```
 Rendre le fichier exécutable
 ```bash
