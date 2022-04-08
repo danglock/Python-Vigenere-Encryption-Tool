@@ -12,6 +12,11 @@ Télécharger le repository avec la commande suivante :
 ```bash
 git clone https://github.com/danglock/V.E.T-Vigenere-Encryption-Tool.git
 ```
+Entrer dans le repository
+```bash
+cd V.E.T-Vigenere-Encryption-tool
+```  
+
 Rendre le fichier exécutable
 ```bash
 chmod +x vigenere.py
