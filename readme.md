@@ -1,7 +1,7 @@
 # V.E.T - Vignere Encryption Tool
 Le chiffrement Vigenère.
 Un code Open Source permettant d'effectuer un chiffrement par substitution polyalphabétique.
-***
+
 ## Installation
 **Prérequis :** [python](https://www.python.org/downloads/)
 
