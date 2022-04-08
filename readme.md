@@ -14,7 +14,7 @@ git clone https://github.com/danglock/V.E.T-Vigenere-Encryption-Tool.git
 ```
 Entrer dans le repository
 ```bash
-cd V.E.T-Vigenere-Encryption-tool
+cd V.E.T-Vigenere-Encryption-Tool
 ```  
 
 Rendre le fichier exécutable
