@@ -3,6 +3,7 @@ Le chiffrement Vigenère.
 Un code Open Source permettant d'effectuer un chiffrement par substitution polyalphabétique.
 
 **Table des matières**
+
 [toc]
 ***
 ## Installation
