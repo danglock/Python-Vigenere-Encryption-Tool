@@ -45,5 +45,6 @@ Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie :
 
 Ce script à été développé dans un cadre d'étude de l'interpréteur python et du chiffrement. Nous déclinons toutes responsabilités quant à une utilisation malintentionnée.
 
-**Auteur :** Dan Collé
+**Auteur :** danglock
+
 **Date :** 08.04.2022
