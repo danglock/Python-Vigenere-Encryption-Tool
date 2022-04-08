@@ -17,7 +17,6 @@ Rendre le fichier exécutable
 chmod +x vigenere.py
 ```
 
-***
 ## Usage
 
 **Attention !**, veuillez **remplacer** ``./vigenere.py`` par ``python vigenere.py`` dans le cadre d'une utilisation sous **OS Windows**.
