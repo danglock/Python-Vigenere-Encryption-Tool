@@ -1,4 +1,4 @@
-# VET - Vignere Encryption Tool
+# Python Vignere Encryption Tool
 Le chiffrement Vigenère.
 Un code Open Source permettant d'effectuer un chiffrement par substitution polyalphabétique.
 
