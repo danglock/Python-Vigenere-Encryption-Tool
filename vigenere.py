@@ -3,17 +3,29 @@
 
 import argparse # Nous en avons besoin pour gérer les commandes
 
-parser = argparse.ArgumentParser(description="Permet de chiffrer un fichier")
-
-parser.add_argument("-k","--key", metavar="", required=False, help="Definir une clé")
-parser.add_argument("-i","--input", metavar="", required=False, help="Definir un text à chiffrer")
-parser.add_argument("-d","--decrypt", metavar="", required=False, help="Definir un text à déchiffer")
-
-args = parser.parse_args()
 
 
+example_text = "example: python vigenere.py -k 'Efghi' -E FileToEncrypt.txt -O output.txt\n"
 
-def encrypt (cle, plaintext):	# Création d'une fonction "encrypt" avec options "cle" et "plaintext"
+parser = argparse.ArgumentParser(description="Permet d'effectuer différentes commandes de chiffrement par substitution polyalphabétique",
+				  epilog=example_text) # Definir une description pour les arguments
+
+parser.add_argument("-k","--key", metavar="", required=False, help="Definir une clé.") # Argument servant à définir la clé de chiffrement
+parser.add_argument("-e","--encrypt", metavar="", required=False, help="Definir un text à chiffrer.") # Argument servant à chiffrer un text dans la commande
+parser.add_argument("-E","--encryptFile", metavar="", required=False, help="Définir un fichier à chiffrer.") # Argument servant à chiffrer le text d'un fichier
+parser.add_argument("-d","--decrypt", metavar="", required=False, help="Definir un text à déchiffer.") # Argument servant à déchiffrer un text dans la commande
+parser.add_argument("-D","--decryptFile", metavar="", required=False, help="Définir un fichier à déchiffrer.") # Argument servant à déchiffrer le contenu d'un fichier
+parser.add_argument("-O","--outputFile", metavar="", required=False, help="Definir un fichier de sortie.") # Argument permettant de sauvegarder le résultat d'une commande dans un fichier
+
+args = parser.parse_args() 
+
+
+
+
+
+
+
+def encrypt (cle, plaintext):	# Création d'une fonction "encrypt" avec options "cle" (clé de chiffrement) et "plaintext" (text à chiffrer)
 
 	def code(j):
 		key = cle[j]			# 
@@ -42,7 +54,7 @@ def encrypt (cle, plaintext):	# Création d'une fonction "encrypt" avec options 
 
 
 
-def decrypt (cle, ciphertext):	# Création d'une fonction "decrypt" avec options "cle" et "ciphertext"
+def decrypt (cle, ciphertext):	# Création d'une fonction "decrypt" avec options "cle" (clé de chiffrement) et "ciphertext" (text chiffré)
 
 	def code(j):
 		key = cle[j]
@@ -70,13 +82,49 @@ def decrypt (cle, ciphertext):	# Création d'une fonction "decrypt" avec options
 
 
 
+
 if __name__ == '__main__':
-	
-	if args.key and args.input:
-		print("Encrypted data =", encrypt(args.key, args.input))
 		
-	elif args.key and args.decrypt:
-		print("Decrypted data =", decrypt(args.key, args.decrypt))
+	if args.key and not (args.encrypt or args.encryptFile or args.decrypt or args.decryptFile):
+		print("L'argument -k doit être accompagné d'au moins 1 des arguments suivants: -e, -E, -d, -D")
+	
+	elif args.key and args.encrypt:						# Si l'utilisateur choisi -k et -e
+		print("Encrypted data =", encrypt(args.key, args.encrypt))	# Chiffrer le contenu de l'argument "-e" avec la clé et afficher le résultat
+		
+	elif args.key and args.encryptFile:								# Si l'utilisateur choisi -k et -E
+		print(f"\nOuverture du fichier : {args.encryptFile}")							# Aficher le nom du fichier en cours d'ouverture
+		source_file = open(args.encryptFile, mode="r")								# Ouvrir le fichier avec open en mode lecture
+		content = source_file.read()										# Stocker le contenu du fichier dans la variable content
+		print(f"Le contenu du fichier est : {content}\nLe contenu chiffré est : {encrypt(args.key, content)}")	# Afficher le contenu du fichier original ainsi que son contenu une fois chiffré
+		
+		if args.outputFile:						# Si l'utilisateur à coisi l'argument -O
+			vigenere_output = open(args.outputFile, mode="w")	# Créer un fichier avec open()
+			vigenere_output.write(encrypt(args.key, content))	# Ecrire le résultat dans le fichier
+			print(f"Encrypted to: {args.outputFile}")		# Avertir l'utilisateur du bon déroulement de l'opération
+			vigenere_output.close()					# Fermer le fichier
+		
+		
+		source_file.close()	# Fermer le fichier source
+		
+	elif args.key and args.decrypt:						# Si l'utilisateur choisi -k et -d
+		print("Decrypted data =", decrypt(args.key, args.decrypt))	# Déchiffrer le contenu de l'argument "-d" avec la clé et afficher le résultat
+		
+	elif args.key and args.decryptFile:									# Si l'utilisateur choisi -k et -D
+		print(f"\nOuverture du fichier : {args.decryptFile}")						# Afficher le nom du fichier en cours d'ouverture
+		source_file = open(args.decryptFile, mode="r")							# Ouvrir le fichier avec open en mode lecture
+		content = source_file.read()									# Stocker le contenu du fichier dans la variable content
+		print(f"Le contenu du fichier est : {content}\nDecrypted data = {decrypt(args.key, content)}")	# Afficher le contenu du fichier, le déchiffrer avec la clé et afficher le résultat
+		
+		if args.outputFile:						# Si l'utilisateur à coisi l'argument -O
+			vigenere_output = open(args.outputFile, mode="w")	# Créer un fichier avec open()
+			vigenere_output.write(decrypt(args.key, content))	# Ecrire le résultat dans le fichier
+			print(f"Decrypted to: {args.outputFile}")		# Avertir l'utilisateur du bon déroulement de l'opération
+			vigenere_output.close()					# Fermer le fichier
+		
+		
+		source_file.close()	# Fermer le fichier source
+		
 		
 	else:
-		print("Mauvaise utilisation de la commande !\nEssayez python vigenere.py --help")
+		print("Mauvaise utilisation de la commande !\n") # En cas d'erreur de frappe / commande inconnue etc.... (tout ce qui n'aurait pas fonctionné)
+		parser.print_help()
