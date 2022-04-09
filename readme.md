@@ -10,11 +10,11 @@ Un code Open Source permettant d'effectuer un chiffrement par substitution polya
 ### UNIX/Linux
 Télécharger le repository avec la commande suivante :
 ```bash
-git clone https://github.com/danglock/V.E.T-Vigenere-Encryption-Tool.git
+git clone https://github.com/danglock/Python-Vigenere-Encryption-Tool.git
 ```
 Entrer dans le repository
 ```bash
-cd V.E.T-Vigenere-Encryption-Tool
+cd Python-Vigenere-Encryption-Tool
 ```  
 
 Rendre le fichier exécutable
