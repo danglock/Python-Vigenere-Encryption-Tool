@@ -31,7 +31,7 @@ Voici la commande permettant d'effectuer un chiffrement Vigenère :
 ./vigenere.py -k "key"
 ```
 
-Chiffrer le contenu d'un fichier. (si aucun chemin de sortie n'est spécifié, alors le fichier de sortie se trouvera dans le même répertoire que celui d'entrée) :
+Chiffrer un text :
 ```bash
 ./vignere.py -k "key" -e "TextToEncrypt"
 ```
