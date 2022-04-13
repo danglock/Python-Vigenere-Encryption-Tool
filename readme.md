@@ -52,7 +52,7 @@ Chiffrer un text :
 Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie :
 
 ```bash
-./vignère -k "key" -E "InputFile.txt" -O "OutputFile.txt"
+./vignère -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
 ```
 
 ## À propos
@@ -62,5 +62,6 @@ Ce script a été développé dans un cadre d'étude de l'interpréteur python e
 Message destiné aux élèves de l'EPSIC  : si vous utilisez ce code dans le cadre d'un examen, vous pouvez vous en inspirer, mais pas le copier.
 
 **Auteur :** danglock
+**Contributeur :** AlexioShow
 
 **Date :** 08.04.2022
