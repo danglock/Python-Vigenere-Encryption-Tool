@@ -7,9 +7,9 @@ Le **chiffre de Vigenère** est un système de [chiffrement par substitution](ht
 ## Prérequis
 
 <p>
-<a href="https://www.python.org/downloads/">
-<img border="0" alt="W3Schools" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg" width="436" height="139">
-</a> 
+<p align="center">
+<a href="https://www.python.org/downloads/"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg" alt="W3Schools" width="436" height="139" border="0" />
+</a>
 </p>
 
 ## Installation
