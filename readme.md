@@ -33,13 +33,13 @@ Voici la commande permettant d'effectuer un chiffrement Vigenère :
 
 Chiffrer le contenu d'un fichier. (si aucun chemin de sortie n'est spécifié, alors le fichier de sortie se trouvera dans le même répertoire que celui d'entrée) :
 ```bash
-./vignere.py -k "key" -i "InputFile.txt"
+./vignere.py -k "key" -e "TextToEncrypt"
 ```
 
 Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie :
 
 ```bash
-./vignère -k "key" -i "InputFile.txt" -o "OutputFile.txt"
+./vignère -k "key" -E "InputFile.txt" -O "OutputFile.txt"
 ```
 ***
 ## A propos
