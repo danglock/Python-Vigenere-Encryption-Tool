@@ -72,7 +72,7 @@ Encrypt the contents of a file, then specify an output path:
 ./vignère -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
 ```
 
-## À propos
+## Termes et conditions / Terms and conditions
 
 Ce script a été développé dans un cadre d'étude de l'interpréteur python et du chiffrement. Nous déclinons toutes les responsabilités quant à une utilisation malintentionnée.
 
