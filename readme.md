@@ -59,8 +59,6 @@ Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie :
 
 Ce script a été développé dans un cadre d'étude de l'interpréteur python et du chiffrement. Nous déclinons toutes les responsabilités quant à une utilisation malintentionnée.
 
-Message destiné aux élèves de l'EPSIC  : si vous utilisez ce code dans le cadre d'un examen, vous pouvez vous en inspirer, mais pas le copier.
-
 **Auteur :** danglock
 
 **Contributeur :** AlexioShow
