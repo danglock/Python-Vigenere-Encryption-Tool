@@ -40,7 +40,7 @@ Rendre le fichier exécutable // Make the file executable
 chmod +x vigenere.py
 ```
 
-## Utilisation / Use
+## Utilisation / Usage
 
 **Attention !** Veuillez **remplacer** ``./vigenere.py`` par ``python vigenere.py`` lors d'une utilisation sous l'**OS Windows**.
 **Warning !** Please replace ``./vigenere.py`` by ``python vigenere.py`` when using **Windows OS.**
