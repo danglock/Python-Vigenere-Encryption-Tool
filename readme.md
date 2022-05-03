@@ -23,24 +23,18 @@ EN = The **Vigenère cipher** is a method of [encrypting](https://en.wikipedia.o
 
 <h3><strong>Linux / UX </strong>&nbsp;<img src="https://simpleicons.org/icons/linux.svg" alt="" width="25" height="25" /></h3>
 
-Télécharger le repository avec la commande suivante
-
-Download the repository with the following command  :
+Télécharger le repository avec la commande suivante // Download the repository with the following command  :
 
 ```bash
 git clone https://github.com/danglock/Python-Vigenere-Encryption-Tool.git
 ```
-Entrer dans le repository
-
-Enter in the repository
+Entrer dans le repository // Enter in the repository
 
 ```bash
 cd Python-Vigenere-Encryption-Tool
 ```
 
-Rendre le fichier exécutable
-
-Make the file executable
+Rendre le fichier exécutable // Make the file executable
 
 ```bash
 chmod +x vigenere.py
@@ -51,22 +45,19 @@ chmod +x vigenere.py
 **Attention !** Veuillez **remplacer** ``./vigenere.py`` par ``python vigenere.py`` lors d'une utilisation sous l'**OS Windows**.
 **Warning !** Please replace ``./vigenere.py`` by ``python vigenere.py`` when using **Windows OS.**
 
-Voici la commande permettant d'effectuer un chiffrement Vigenère :
-Here is the command to perform a Vigenère encryption :
+Voici la commande permettant d'effectuer un chiffrement Vigenère : // Here is the command to perform a Vigenère encryption :
 
 ```
 ./vigenere.py -k "key"
 ```
 
-Chiffrer un texte :
-Encrypting a text :
+Chiffrer un texte : // Encrypting a text :
 
 ```bash
 ./vignere.py -k "key" -e "TextToEncrypt"
 ```
 
-Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie :
-Encrypt the contents of a file, then specify an output path:
+Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie : // Encrypt the contents of a file, then specify an output path:
 
 ```bash
 ./vignère -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
@@ -74,10 +65,7 @@ Encrypt the contents of a file, then specify an output path:
 
 ## Termes et conditions / Terms and conditions
 
-Ce script a été développé dans un cadre d'étude de l'interpréteur python et du chiffrement. Nous déclinons toutes les responsabilités quant à une utilisation malintentionnée.
-
-This script has been developed to study the python interpreter and encryption. We decline all responsibility for any malicious use.
-WARNING! THE CODE WILL ONLY RUN IN FRENCH!
+Ce script a été développé dans un cadre d'étude de l'interpréteur python et du chiffrement. Nous déclinons toutes les responsabilités quant à une utilisation malintentionnée. // This script has been developed to study the python interpreter and encryption. We decline all responsibility for any malicious use. WARNING! THE CODE WILL ONLY RUN IN FRENCH!
 
 ------
 
