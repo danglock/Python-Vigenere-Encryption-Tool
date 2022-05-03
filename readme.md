@@ -7,7 +7,7 @@ EN = The **Vigenère cipher** is a method of [encrypting](https://en.wikipedia.o
   <img src="https://iili.io/VAnXQn.md.png" />
 </p>
 
-## Prérequis
+## Prérequis // Requirements
 
 <p>
 <p align="center">
