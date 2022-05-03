@@ -77,6 +77,7 @@ Encrypt the contents of a file, then specify an output path:
 Ce script a été développé dans un cadre d'étude de l'interpréteur python et du chiffrement. Nous déclinons toutes les responsabilités quant à une utilisation malintentionnée.
 
 This script has been developed to study the python interpreter and encryption. We decline all responsibility for any malicious use.
+WARNING! THE CODE WILL ONLY RUN IN FRENCH!
 
 ------
 
