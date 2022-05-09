@@ -54,13 +54,13 @@ Voici la commande permettant d'effectuer un chiffrement Vigenère : // Here is t
 Chiffrer un texte : // Encrypting a text :
 
 ```bash
-./vignere.py -k "key" -e "TextToEncrypt"
+./vigenere.py -k "key" -e "TextToEncrypt"
 ```
 
 Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie : // Encrypt the contents of a file, then specify an output path:
 
 ```bash
-./vignere.py -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
+./vigenere.py -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
 ```
 
 ## Termes et conditions / Terms and conditions
