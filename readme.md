@@ -60,7 +60,7 @@ Chiffrer un texte : // Encrypting a text :
 Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie : // Encrypt the contents of a file, then specify an output path:
 
 ```bash
-./vignère -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
+./vignere.py -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
 ```
 
 ## Termes et conditions / Terms and conditions
