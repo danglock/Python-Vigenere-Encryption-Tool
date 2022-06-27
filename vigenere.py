@@ -31,9 +31,9 @@ parser.add_argument("-e", "--encrypt", metavar="", required=False, help="Défini
 parser.add_argument("-EF", "--encryptFile", metavar="", required=False, help="Définir un fichier à chiffrer.")
 # Argument permettant de chiffrer le texte d'un fichier
 parser.add_argument("-d", "--decrypt", metavar="", required=False, help="Définir un texte à déchiffrer.")
-# Argument permettant à déchiffrer un texte
+# Argument permettant de déchiffrer un texte
 parser.add_argument("-DF", "--decryptFile", metavar="", required=False, help="Définir un fichier à déchiffrer.")
-# Argument permettant à déchiffrer le texte d'un fichier
+# Argument permettant de déchiffrer le texte contenu dans un fichier
 parser.add_argument("-OF", "--outputFile", metavar="", required=False, help="Définir un fichier de sortie.")
 # Argument permettant de sauvegarder le résultat d'une commande dans un fichier
 
